@@ -8,7 +8,7 @@ Created on Wed Dec  4 00:09:28 2024
 
 
 # Open the saved configuration file
-# '/home/kamran/R3__2024-12-03_16-38-18.txt'
+# /home/kamran/R3__2024-12-03_16-38-18.txt
 def clean_router_backup(input_file, output_file, unwanted_patterns):
     with open(input_file, 'r') as file:
         lines = file.readlines()
@@ -51,8 +51,8 @@ if __name__ == "__main__":
     input_file = input("Enter the input file name: ").strip()
     output_file = input("Enter the output file name: ").strip()
 
-    print("Enter unwanted patterns (enter ezch pattern and \n hit enter for adding next \n pattern \ at the end type 'done' to finish):")
-    unwanted_patterns = []
+    print("Enter unwanted patterns by default the \n lines containg  following words will be removed \n version Build Current ! done (enter each pattern and \n hit enter for adding next \n pattern \n at the end type 'done' to finish):")
+    unwanted_patterns = ['Current', 'version', '!', 'Build']
     while True:
         pattern = input().strip()
         if pattern.lower() == 'done':
