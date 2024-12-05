@@ -34,6 +34,17 @@ monitor_time = get_monitor_time()
 while monitor_time > 0:
     monitor_time -= 1
     t += 1
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     output = subprocess.run(f'ping -c 1 -W 0.2 {ip}', capture_output=True, text=True, shell=True)
     output = output.stdout
     ping_output = str(output)
